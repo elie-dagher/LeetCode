@@ -1,3 +1,4 @@
+/* basically if the inverval is is longer than the duration, then the duration is added else the poison counter resets */
 int findPoisonedDuration(int* timeSeries, int timeSeriesSize, int duration) {
     if (timeSeriesSize == 1) return duration;
 
