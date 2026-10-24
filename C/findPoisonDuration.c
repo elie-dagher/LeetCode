@@ -15,3 +15,18 @@ int findPoisonedDuration(int* timeSeries, int timeSeriesSize, int duration) {
 
     return time;
 }
+
+/*
+findPoisionDuration - Python Implementation
+class Solution:
+    def findPoisonedDuration(self, timeSeries: list[int], duration: int) -> int:
+        dmg = 0
+        for i in range(len(timeSeries) - 1):
+            if timeSeries[i+1] - timeSeries[i] <= duration:
+                dmg += timeSeries[i+1] - timeSeries[i]
+            else:
+                dmg += duration
+        dmg += duration
+        return dmg
+        
+*/
